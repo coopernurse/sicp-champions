@@ -12,8 +12,8 @@
   (cond ((< col 1) 0)
         ((= col 1) 1)
         ((> col row) 0)
-        (else (+ (pascal-num (- row 1) (- col 1))
-                 (pascal-num (- row 1) col)))))
+        (else (+ (pascal-triangle-cell (- row 1) (- col 1))
+                 (pascal-triangle-cell (- row 1) col)))))
 
 (define (pascal-triangle-row row)
   (map (lambda (col) (pascal-triangle-cell row (+ 1 col))) (range row)))

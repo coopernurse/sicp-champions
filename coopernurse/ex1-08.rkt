@@ -11,18 +11,18 @@
 (define (cube x) (* x x x))
 
 (define (cube-root x)
-  (define (improve-cube guess x)
+  (define (improve-cube guess)
     (/ (+ (/ x (square guess)) (* 2 guess)) 3))
-  (define (cube-error guess x)
+  (define (cube-error guess)
     (abs (- (cube guess) x)))
   (define (good-enough? last-err cur-err)
     (< (abs (- last-err cur-err)) 0.00001))
-  (define (cube-root-iter guess x last-err)
-    (define cur-err (cube-error guess x))
+  (define (cube-root-iter guess last-err)
+    (define cur-err (cube-error guess))
     (if (good-enough? last-err cur-err)
         guess
-        (cube-root-iter (improve-cube guess x) x cur-err)))
-  (cube-root-iter 1.0 x (cube x)))
+        (cube-root-iter (improve-cube guess) cur-err)))
+    (cube-root-iter 1.0 (cube x)))
 
 
 ;; if we wanted to eliminate the duplicate code between sqrt-17 and cube-root-18
