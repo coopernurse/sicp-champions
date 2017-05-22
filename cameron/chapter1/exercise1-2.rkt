@@ -64,3 +64,12 @@
 
 
 ;; EXERCISE 1.11 ---------------------------------------------
+
+
+
+
+;; EXERCISE 1.12 ----------------------------------------
+
+(define (pascal-triangle-cell row col))
+
+;; returns 1 value, we haven't learned to return lists yet 
