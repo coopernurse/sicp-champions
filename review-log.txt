@@ -1,0 +1,15 @@
+
+Week 2 - Thurs May 18
+---------------------
+
+* Problems covered:
+
+
+Week 1 - Thurs May 11
+---------------------
+
+* Problems covered: 1.1-1.7
+* normal vs applicative: is it the same as lazy vs strict?
+  * No: http://stackoverflow.com/questions/4634542/eager-evaluation-applicative-order-and-lazy-evaluation-normal-order/9198918
+
+
