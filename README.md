@@ -14,7 +14,7 @@ We've chosen to use Racket.
 ## using vim for sicp
 
 * [Configuring Vim for SICP](http://crash.net.nz/posts/2014/08/configuring-vim-for-sicp/)
-* [Editing Lisp and Scheme files in vi] (http://ds26gte.github.io/scmindent/index.html)
+* [Editing Lisp and Scheme files in vi](http://ds26gte.github.io/scmindent/index.html)
 * [tslime documentation](https://github.com/sjl/tslime.vim/blob/master/doc/tslime.txt)
 
 Steps to set up SICP in VIM:
